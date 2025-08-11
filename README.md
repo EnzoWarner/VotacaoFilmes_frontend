@@ -41,4 +41,6 @@ frontend/
   ├── app.js        # Lógica e integração com API
   └── README.md     # Esta documentação
 ```
-"# VotacaoFilmes_frontend" 
+
+<img width="1153" height="568" alt="image" src="https://github.com/user-attachments/assets/d0b6d1de-fdb2-4fdc-b684-658ef504af76" />
+
