@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Simulador de Votação — Filmes e Séries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Simulador de Votação — Filmes & Séries</h1>
+        <div style="color:var(--muted);font-size:0.9rem">
+          Entrega: 10/08/2025 • Backend: http://localhost:3000
+        </div>
+      </div>
+      <div class="totals" aria-live="polite">
+        <div class="total-item"><div style="font-size:0.75rem;color:var(--muted)">Positivos</div><span id="total-like">0</span></div>
+        <div class="total-item"><div style="font-size:0.75rem;color:var(--muted)">Negativos</div><span id="total-dislike">0</span></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section>
+        <div style="margin-bottom:10px;color:var(--muted);">Clique em "Gostei" ou "Não Gostei". Os votos são salvos automaticamente.</div>
+        <div class="cards" id="cards"></div>
+      </section>
+
+      <aside>
+        <h3>Cadastro de Filme/Série</h3>
+        <form id="form">
+          <div>
+            <label for="title">Título *</label>
+            <input id="title" name="title" type="text" required>
+          </div>
+          <div class="row">
+            <div class="small">
+              <label for="genre">Gênero *</label>
+              <input id="genre" name="genre" type="text" required>
+            </div>
+            <div class="small">
+              <label for="image">Imagem (URL) *</label>
+              <input id="image" name="image" type="text" required placeholder="https://...">
+            </div>
+          </div>
+          <div>
+            <label for="description">Descrição (opcional)</label>
+            <textarea id="description" rows="4"></textarea>
+          </div>
+          <div class="actions">
+            <button type="button" class="btn" id="resetSeed">Restaurar padrão</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </div>
+        </form>
+        <footer>
+          <div style="margin-top:8px">Itens cadastrados ficam com votos zerados e disponíveis imediatamente.</div>
+        </footer>
+      </aside>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+  <script src="app.js"></script>
+</body>
+</html>
